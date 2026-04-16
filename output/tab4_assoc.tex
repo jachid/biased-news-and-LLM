@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+\centering
+\caption{Exploratory Associations: Information Processing and Bias Perception Change}
+\label{tab:assoc}
+\begin{tabular}{l*{2}{c}}
+\toprule
+ & \multicolumn{2}{c}{Change in Perceived Bias} \\
+\cmidrule(lr){2-3}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{With covariates}\\
+\midrule
+Chatbot             &       8.894\sym{***}&       8.826\sym{***}\\
+                    &     (2.332)         &     (2.291)         \\
+\addlinespace
+Comment             &       3.602         &       4.743\sym{*}  \\
+                    &     (2.500)         &     (2.447)         \\
+\addlinespace
+Pre-treatment bias  &      -0.428\sym{***}&      -0.439\sym{***}\\
+                    &     (0.040)         &     (0.039)         \\
+\addlinespace
+Fairness evaluation &                     &       0.969         \\
+                    &                     &     (0.805)         \\
+\addlinespace
+Information novelty &                     &      -0.984         \\
+                    &                     &     (0.613)         \\
+\addlinespace
+Verification motive &                     &       3.018\sym{***}\\
+                    &                     &     (0.692)         \\
+\midrule
+Observations        &         670         &         670         \\
+$R^2$               &       0.201         &       0.241         \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} OLS estimates. The dependent variable is the change in perceived bias against China (0--100). Column (1) is the primary specification. Column (2) adds post-treatment information-processing measures as covariates. These variables are measured after treatment and are therefore not causally identified as mediators; results should be interpreted as exploratory associations only. Robust standard errors in parentheses. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
+\end{minipage}
+\end{table}

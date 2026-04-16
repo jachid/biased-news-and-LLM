@@ -1,0 +1,35 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Without mechanisms}&\multicolumn{1}{c}{With mechanisms}\\
+\midrule
+Comment             &      -5.292\sym{**} &      -4.082\sym{**} \\
+                    &     (2.056)         &     (2.013)         \\
+\addlinespace
+Static              &      -8.894\sym{***}&      -8.826\sym{***}\\
+                    &     (2.332)         &     (2.291)         \\
+\addlinespace
+Pre-treatment bias  &      -0.428\sym{***}&      -0.439\sym{***}\\
+                    &    (0.0401)         &    (0.0393)         \\
+\addlinespace
+Helped evaluate fairness&                     &       0.969         \\
+                    &                     &     (0.805)         \\
+\addlinespace
+Information was new &                     &      -0.984         \\
+                    &                     &     (0.613)         \\
+\addlinespace
+Made me want to verify&                     &       3.018\sym{***}\\
+                    &                     &     (0.692)         \\
+\midrule
+Observations        &         670         &         670         \\
+R-squared           &       0.201         &       0.241         \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize Dep.\ var.: change in perceived bias (0--100).}\\
+\multicolumn{3}{l}{\footnotesize Baseline: Chatbot. Robust standard errors in parentheses.}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

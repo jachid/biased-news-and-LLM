@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Treatment Effects on Information Processing (Exploratory)}
+\label{tab:mechanisms}
+\begin{tabular}{l*{3}{c}}
+\toprule
+ & \multicolumn{3}{c}{Post-Treatment Evaluation (1--7 scale)} \\
+\cmidrule(lr){2-4}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{Fairness}&\multicolumn{1}{c}{Novelty}&\multicolumn{1}{c}{Verification}\\
+\midrule
+Chatbot             &       0.013         &      -0.334\sym{**} &      -0.094         \\
+                    &     (0.131)         &     (0.149)         &     (0.149)         \\
+\addlinespace
+Comment             &      -0.092         &      -0.171         &      -0.408\sym{**} \\
+                    &     (0.136)         &     (0.152)         &     (0.158)         \\
+\midrule
+Observations        &         670         &         670         &         670         \\
+$R^2$               &       0.001         &       0.007         &       0.011         \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} OLS estimates. The omitted baseline is Static. \textit{Fairness}:  \textit{Novelty}:  \textit{Verification}:  Robust standard errors in parentheses. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
+\end{minipage}
+\end{table}

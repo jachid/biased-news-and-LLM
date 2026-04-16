@@ -1,0 +1,47 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{Pre-treatment}&\multicolumn{1}{c}{Full controls}\\
+\midrule
+Comment             &      -5.316\sym{**} &      -5.292\sym{**} &      -5.357\sym{***}\\
+                    &     (2.278)         &     (2.056)         &     (2.054)         \\
+\addlinespace
+Static              &      -9.366\sym{***}&      -8.894\sym{***}&      -8.627\sym{***}\\
+                    &     (2.575)         &     (2.332)         &     (2.319)         \\
+\addlinespace
+Pre-treatment bias  &                     &      -0.428\sym{***}&      -0.431\sym{***}\\
+                    &                     &    (0.0401)         &    (0.0410)         \\
+\addlinespace
+Age                 &                     &                     &     -0.0844         \\
+                    &                     &                     &    (0.0570)         \\
+\addlinespace
+Female              &                     &                     &       2.655         \\
+                    &                     &                     &     (1.816)         \\
+\addlinespace
+Education           &                     &                     &       0.852         \\
+                    &                     &                     &     (0.895)         \\
+\addlinespace
+Income              &                     &                     &      -0.336         \\
+                    &                     &                     &     (0.570)         \\
+\addlinespace
+Political orientation&                     &                     &      -0.865         \\
+                    &                     &                     &     (0.643)         \\
+\addlinespace
+Trust in AI         &                     &                     &       0.207         \\
+                    &                     &                     &     (0.661)         \\
+\addlinespace
+Favorable to China  &                     &                     &       0.590         \\
+                    &                     &                     &     (1.079)         \\
+\midrule
+Observations        &         670         &         670         &         670         \\
+R-squared           &       0.022         &       0.201         &       0.212         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize Dep.\ var.: change in perceived bias against China (0--100 scale).}\\
+\multicolumn{4}{l}{\footnotesize Baseline: Chatbot. Robust standard errors in parentheses.}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

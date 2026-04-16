@@ -1,0 +1,52 @@
+\begin{table}[htbp]
+\centering
+\caption{Treatment Effects on Perceived Bias Against China}
+\label{tab:bias}
+\begin{tabular}{l*{3}{c}}
+\toprule
+ & \multicolumn{3}{c}{Change in Perceived Bias (0--100)} \\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+\midrule
+Chatbot             &       9.366\sym{***}&       8.894\sym{***}&       8.605\sym{***}\\
+                    &     (2.575)         &     (2.332)         &     (2.321)         \\
+\addlinespace
+Comment             &       4.051         &       3.602         &       3.259         \\
+                    &     (2.790)         &     (2.500)         &     (2.512)         \\
+\addlinespace
+Pre-treatment bias  &                     &      -0.428\sym{***}&      -0.431\sym{***}\\
+                    &                     &     (0.040)         &     (0.041)         \\
+\addlinespace
+Age                 &                     &                     &      -0.082         \\
+                    &                     &                     &     (0.057)         \\
+\addlinespace
+Female              &                     &                     &       2.662         \\
+                    &                     &                     &     (1.818)         \\
+\addlinespace
+Education           &                     &                     &       0.824         \\
+                    &                     &                     &     (0.899)         \\
+\addlinespace
+Income              &                     &                     &      -0.346         \\
+                    &                     &                     &     (0.571)         \\
+\addlinespace
+Pol.\ orientation   &                     &                     &      -0.898         \\
+                    &                     &                     &     (0.641)         \\
+\addlinespace
+Trust in AI         &                     &                     &       0.179         \\
+                    &                     &                     &     (0.663)         \\
+\addlinespace
+Favorable to China  &                     &                     &       0.597         \\
+                    &                     &                     &     (1.079)         \\
+\addlinespace
+UK                  &                     &                     &      -0.978         \\
+                    &                     &                     &     (1.833)         \\
+\midrule
+Observations        &         670         &         670         &         670         \\
+$R^2$               &       0.022         &       0.201         &       0.212         \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} OLS estimates. The dependent variable is the change in perceived bias against China (post minus pre) on a 0--100 scale. The omitted baseline is the Static treatment. Robust standard errors in parentheses. Column (1) is unadjusted; column (2) controls for pre-treatment bias; column (3) adds demographic controls and country fixed effect. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
+\end{minipage}
+\end{table}

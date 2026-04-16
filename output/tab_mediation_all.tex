@@ -1,0 +1,32 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{Trust}&\multicolumn{1}{c}{One-sided}&\multicolumn{1}{c}{Bias}&\multicolumn{1}{c}{Share}\\
+\midrule
+Comment             &       0.320         &      -0.913         &      -4.082\sym{**} &       0.245         \\
+                    &     (1.733)         &     (1.958)         &     (2.013)         &     (1.350)         \\
+\addlinespace
+Static              &       2.485         &      -3.845\sym{*}  &      -8.826\sym{***}&       0.197         \\
+                    &     (1.773)         &     (2.174)         &     (2.291)         &     (1.505)         \\
+\addlinespace
+Helped evaluate fairness&       0.382         &       0.980         &       0.969         &       0.594         \\
+                    &     (0.668)         &     (0.827)         &     (0.805)         &     (0.428)         \\
+\addlinespace
+Information was new &      -0.300         &      -0.215         &      -0.984         &      -1.263\sym{***}\\
+                    &     (0.570)         &     (0.636)         &     (0.613)         &     (0.443)         \\
+\addlinespace
+Made me want to verify&      -1.399\sym{***}&       2.427\sym{***}&       3.018\sym{***}&       0.509         \\
+                    &     (0.516)         &     (0.660)         &     (0.692)         &     (0.361)         \\
+\midrule
+Observations        &         670         &         670         &         670         &         670         \\
+R-squared           &       0.198         &       0.347         &       0.241         &       0.177         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize All regressions control for pre-treatment outcome level.}\\
+\multicolumn{5}{l}{\footnotesize Baseline: Chatbot. Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

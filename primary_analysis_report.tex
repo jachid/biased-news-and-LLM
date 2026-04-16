@@ -1,0 +1,255 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{natbib}
+\usepackage{threeparttable}
+
+\onehalfspacing
+\graphicspath{{output/}}
+\newcommand{\sym}[1]{\ensuremath{^{#1}}}
+
+\title{AI-Based Interventions and Perceived Bias in News Coverage of China: Primary Analysis}
+\author{}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent We study the effects of AI-based interventions on perceptions of bias in news coverage of China using an online experiment ($N=670$; US and UK). Participants read a news article and were randomly assigned to one of three treatments varying in interactivity: an interactive AI chatbot, a tailored AI-generated comment, or a generic static message. Taking the static message as the baseline, the chatbot significantly increases perceived bias against China by approximately 8.9 points on a 0--100 scale ($p<0.001$). The comment produces a smaller, statistically insignificant effect ($+3.6$ points, $p=0.150$). No significant treatment differences are found for perceived trustworthiness, one-sidedness, or sharing intentions. Exploratory analysis of post-treatment information-processing measures suggests that the desire to verify the article further is positively associated with increased bias perceptions.
+\end{abstract}
+
+%============================================================
+\section{Experimental Design}
+%============================================================
+
+\subsection{Overview}
+
+The experiment studies how AI-generated interventions of varying interactivity affect participants' perceptions of a news article about China. All participants read the same article (``China's Long-Promised Consumer Boom...'') and were randomly assigned to one of three treatment arms:
+
+\begin{itemize}
+    \item \textbf{Static} ($n=184$, 27.5\%): A generic static message. This is the baseline condition.
+    \item \textbf{Comment} ($n=215$, 32.1\%): A single, tailored AI-generated comment personalized to the participant's stated opinion.
+    \item \textbf{Chatbot} ($n=271$, 40.5\%): Interactive AI chatbot conversation with up to 3 rounds of dialogue.
+\end{itemize}
+
+\subsection{Outcomes}
+
+Four outcome measures were elicited both before and after treatment on a 0--100 continuous scale:
+\begin{enumerate}
+    \item \textbf{Primary outcome}: Perceived bias against China.
+    \item \textbf{Secondary outcomes}: Perceived trustworthiness, perceived one-sidedness, and sharing likelihood.
+\end{enumerate}
+The estimand of interest is the change score (post $-$ pre) for each measure.
+
+\subsection{Estimands}
+
+The \textit{primary estimand} is the intent-to-treat (ITT) effect of the Chatbot versus the Static condition on the change in perceived bias against China, controlling for pre-treatment bias. Secondary estimands include the Comment versus Static contrast and all contrasts on the three secondary outcomes.
+
+\subsection{Sample}
+
+Table~\ref{tab:flow} reports the participant flow. The sample comprises 333 US and 337 UK participants recruited via Prolific ($N=670$). No observations are excluded. All participants passed the attention check.
+
+\begin{table}[H]
+\centering
+\caption{Participant Flow}
+\label{tab:flow}
+\begin{tabular}{lcccc}
+\toprule
+ & Static & Comment & Chatbot & Total \\
+\midrule
+US & 87 & 106 & 140 & 333 \\
+UK & 97 & 109 & 131 & 337 \\
+\midrule
+Total & 184 & 215 & 271 & 670 \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} No exclusions applied. All participants passed the recall-based attention check.
+\end{minipage}
+\end{table}
+
+%============================================================
+\section{Summary Statistics and Balance}
+%============================================================
+
+Table~\ref{tab:summary} reports summary statistics by treatment group. Panel A presents demographic characteristics with $p$-values from OLS regressions of each covariate on treatment indicators. Most covariates are well-balanced. Income ($p=0.012$) and trust in AI ($p=0.016$) show some imbalance with the Static arm; both are controlled for in the full specification with no meaningful change in estimates. Panel B reports the race distribution, which is balanced across arms (Pearson $\chi^2$, $p=0.501$). Pre-treatment outcome levels are well-balanced (all $p>0.50$; not shown).
+
+\input{output/tab1_summary.tex}
+
+%============================================================
+\section{Treatment Effects}
+%============================================================
+
+\subsection{Primary Result: Perceived Bias Against China}
+
+Figure~\ref{fig:panel} displays mean change scores by treatment with 95\% confidence intervals. The bottom-left panel shows the main finding: the Chatbot arm increases perceived bias by 8.6 points relative to the Static arm, which shows essentially no change.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{fig1_panel.pdf}
+\caption{Mean Change Scores by Treatment (with 95\% CIs)}
+\label{fig:panel}
+\end{figure}
+
+Table~\ref{tab:bias} presents the primary estimand across three specifications. The Chatbot effect is large and robust: 9.37 points in the unadjusted specification ($p<0.001$), 8.89 points controlling for pre-treatment bias ($p<0.001$), and 8.63 points with full demographic controls and a country fixed effect ($p<0.001$). The Comment effect is smaller and not statistically significant in any specification.
+
+\input{output/tab2_bias.tex}
+
+\subsection{Secondary Outcomes}
+
+Table~\ref{tab:all} reports effects on all four outcomes using the preferred specification (OLS with pre-treatment control). Only the bias outcome shows significant treatment differences. Trust, one-sidedness, and sharing show no statistically significant between-group differences at conventional levels.
+
+\input{output/tab2_all.tex}
+
+Figure~\ref{fig:coefplot} visualizes the treatment effects across all outcomes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{fig2_coefplot.pdf}
+\caption{Treatment Effects Relative to Static}
+\label{fig:coefplot}
+\end{figure}
+
+\subsection{Robustness: Permutation Tests}
+
+We verify the main results using Fisher-Pitman permutation tests (200,000 Monte Carlo simulations), which make no distributional assumptions. Table~\ref{tab:perm} reports two-tailed $p$-values.
+
+\begin{table}[H]
+\centering
+\caption{Pairwise Permutation Tests ($p$-values, Two-Tailed)}
+\label{tab:perm}
+\begin{tabular}{lccc}
+\toprule
+Outcome & Chatbot vs.\ Static & Comment vs.\ Static & Chatbot vs.\ Comment \\
+\midrule
+Bias (primary) & $<$\textbf{0.001} & 0.145 & \textbf{0.019} \\
+Trust       & 0.197 & 0.354 & 0.773 \\
+One-sidedness & 0.159 & 0.432 & 0.526 \\
+Sharing     & 0.890 & 0.693 & 0.753 \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} Each cell reports a two-tailed $p$-value from a Fisher-Pitman permutation test (200,000 Monte Carlo simulations) comparing the mean change score between two treatment groups. The test is nonparametric and exact under the sharp null of no treatment effect. Bold indicates $p < 0.05$. The primary contrast (Chatbot vs.\ Static on perceived bias) survives Bonferroni correction across four outcomes ($0.001 \times 4 < 0.01$).
+\end{minipage}
+\end{table}
+
+The primary result---Chatbot significantly increases perceived bias relative to Static---is confirmed nonparametrically ($p<0.001$). The Comment vs.\ Static contrast is not significant ($p=0.145$).
+
+\subsection{Multiple Hypothesis Testing Corrections}
+
+Because we test four outcomes, we apply two correction procedures across the outcome family for the primary contrast (Chatbot vs.\ Static). Table~\ref{tab:mht} reports unadjusted, Bonferroni-Holm, and Romano-Wolf stepdown adjusted $p$-values.
+
+\begin{table}[H]
+\centering
+\caption{Multiple Hypothesis Testing Corrections: Chatbot vs.\ Static}
+\label{tab:mht}
+\begin{tabular}{lcccc}
+\toprule
+ & & \multicolumn{3}{c}{$p$-values} \\
+\cmidrule(lr){3-5}
+Outcome & $\hat{\beta}$ & Unadjusted & Bonferroni-Holm & Romano-Wolf \\
+\midrule
+Bias (primary)  & 8.894  & 0.0002 & 0.0006 & 0.0014 \\
+One-sidedness   & 3.700  & 0.091  & 0.273  & 0.187 \\
+Trust           & $-$2.236 & 0.204  & 0.408  & 0.326 \\
+Sharing         & 0.163  & 0.913  & 0.913  & 0.888 \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} Each row tests the null of no Chatbot vs.\ Static effect on the given outcome, from OLS regressions controlling for the pre-treatment level. Bonferroni-Holm applies the Holm (1979) step-down procedure across four hypotheses. Romano-Wolf reports resampling-based stepdown adjusted $p$-values (5,000 bootstrap replications; Romano \& Wolf, 2005). The primary result on perceived bias survives both corrections at the 1\% level.
+\end{minipage}
+\end{table}
+
+The primary result on perceived bias survives both corrections comfortably: the Bonferroni-Holm adjusted $p$-value is 0.0006 and the Romano-Wolf adjusted $p$-value is 0.0014, both significant at the 1\% level. No secondary outcome reaches significance under either correction.
+
+Figure~\ref{fig:box} shows the full distribution of change scores by treatment. The bias panel shows a visible rightward shift of the Chatbot distribution relative to the other arms.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{fig3_boxplots.pdf}
+\caption{Distribution of Change Scores by Treatment}
+\label{fig:box}
+\end{figure}
+
+%============================================================
+\section{Country Heterogeneity}
+%============================================================
+
+Table~\ref{tab:nation} reports treatment effects on the primary outcome (change in perceived bias against China) interacted with a UK indicator. The interaction terms are not statistically significant ($F$-test: $p>0.50$), indicating no detectable heterogeneity in the Chatbot or Comment effects across countries. The main Chatbot effect is present in both the US and UK subsamples.
+
+\input{output/tab5_nation.tex}
+
+%============================================================
+\section{Exploratory Analysis: Information Processing}
+%============================================================
+
+We examine whether three post-treatment information-processing measures predict perception changes \textit{differently} across treatment arms. The three measures, each on a 1--7 Likert scale, are: (i) \textit{fairness evaluation} (``helped me evaluate whether the article was fair''), (ii) \textit{information novelty} (``the information provided is new to me''), and (iii) \textit{verification motive} (``made me want to verify the article further''). Because these variables are measured after treatment, the results should be interpreted as exploratory within-treatment associations, not as causal mediation.
+
+\subsection{Do Information Processing Channels Differ Across Treatments?}
+
+Table~\ref{tab:within_bias} reports OLS regressions of the change in perceived bias on the three information-processing measures, estimated separately within each treatment arm (all controlling for pre-treatment bias). The verification motive is positively and significantly associated with increased perceived bias in both the Comment arm ($\beta = 4.58$, $p < 0.001$) and the Chatbot arm ($\beta = 2.27$, $p = 0.016$), but not in the Static arm ($\beta = 2.36$, $p = 0.131$). By contrast, the fairness evaluation measure shows a marginal positive association only in the Static arm ($\beta = 2.66$, $p = 0.074$). Information novelty is not significantly associated with bias change in any arm.
+
+This pattern suggests that different information-processing channels may operate in different treatments: the verification motive appears to be the active channel in the interactive and tailored treatments (Chatbot and Comment), while the fairness evaluation channel may play a modest role only in the passive condition.
+
+\input{output/tab_within_bias.tex}
+
+\subsection{All Outcomes}
+
+Table~\ref{tab:within_all} extends the within-treatment analysis to all four outcomes. Several patterns emerge. The verification motive is consistently associated with reduced trust in the Chatbot arm ($\beta = -1.88$, $p = 0.011$) and increased one-sidedness perceptions in the Comment arm ($\beta = 4.01$, $p < 0.001$). Information novelty is negatively associated with sharing likelihood in the Chatbot arm ($\beta = -1.93$, $p = 0.008$), suggesting that participants who found the chatbot's information novel were less inclined to share the article. These heterogeneous patterns are consistent with different modes of information processing being activated by different intervention formats.
+
+\input{output/tab_within_all.tex}
+
+Figure~\ref{fig:mech} displays the means of the three information-processing measures by treatment group.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{fig5_mechanisms.pdf}
+\caption{Information Processing Measures by Treatment (with 95\% CIs)}
+\label{fig:mech}
+\end{figure}
+
+%============================================================
+\section{Summary}
+%============================================================
+
+\begin{table}[H]
+\centering
+\caption{Summary of Primary and Secondary Results}
+\label{tab:summary_results}
+\begin{tabular}{llccc}
+\toprule
+ & & OLS & With controls & Permutation \\
+Outcome & Contrast & $\hat{\beta}$ ($p$) & $\hat{\beta}$ ($p$) & $p$ \\
+\midrule
+\textit{Primary} & & & & \\
+\quad Bias & Chatbot vs.\ Static & 9.37 ($<$0.001) & 8.63 ($<$0.001) & $<$0.001 \\
+\addlinespace
+\textit{Secondary} & & & & \\
+\quad Bias & Comment vs.\ Static & 3.60 (0.150) & --- & 0.145 \\
+\quad Trust & Chatbot vs.\ Static & $-$2.24 (0.204) & --- & 0.197 \\
+\quad One-sided & Chatbot vs.\ Static & 3.70 (0.091) & --- & 0.159 \\
+\quad Share & Chatbot vs.\ Static & 0.16 (0.913) & --- & 0.890 \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} OLS estimates from regressions controlling for pre-treatment outcome level. ``With controls'' adds demographics and country fixed effect. Static is the omitted baseline. The primary estimand (Chatbot vs.\ Static on perceived bias) survives Bonferroni-Holm ($p=0.0006$) and Romano-Wolf ($p=0.0014$) corrections across four outcomes.
+\end{minipage}
+\end{table}
+
+The central finding is that an interactive AI chatbot significantly increases perceived bias against China in a news article by approximately 9 points on a 0--100 scale relative to a static message. This result is robust across specifications, confirmed by nonparametric permutation inference, and consistent across the US and UK subsamples. A tailored AI comment produces a smaller, statistically insignificant effect. No treatment arm differentially affects trustworthiness, one-sidedness, or sharing intentions.
+
+We emphasize two important limitations on interpretation. First, the experiment identifies shifts in \textit{perceived} bias, not whether the induced perceptions are accurate or welfare-improving. The chatbot may be helping participants recognize genuine bias or inducing a false perception of bias---the current design cannot distinguish these. Second, the design cannot separate the effect of interactivity from the effect of message content: if the chatbot systematically argued that the article was biased against China, the estimated effect reflects exposure to that argument rather than the interactive format \textit{per se}.
+
+\end{document}

@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\caption{Information Processing and Bias Perception Change by Treatment}
+\label{tab:within_bias}
+\begin{tabular}{l*{3}{c}}
+\toprule
+ & \multicolumn{3}{c}{Change in Perceived Bias (0--100)} \\
+\cmidrule(lr){2-4}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{Static}&\multicolumn{1}{c}{Comment}&\multicolumn{1}{c}{Chatbot}\\
+\midrule
+Fairness evaluation &       2.661\sym{*}  &      -1.367         &       1.246         \\
+                    &     (1.480)         &     (1.347)         &     (1.340)         \\
+\addlinespace
+Information novelty &      -2.350\sym{*}  &      -0.417         &      -0.436         \\
+                    &     (1.389)         &     (1.146)         &     (0.847)         \\
+\addlinespace
+Verification motive &       2.365         &       4.581\sym{***}&       2.274\sym{**} \\
+                    &     (1.557)         &     (1.210)         &     (0.942)         \\
+\midrule
+Observations        &         184         &         215         &         271         \\
+$R^2$               &       0.234         &       0.276         &       0.199         \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} OLS estimates within each treatment arm. The dependent variable is the change in perceived bias against China (0--100). All regressions control for pre-treatment bias. \textit{Fairness evaluation}:  (1--7). \textit{Information novelty}:  (1--7). \textit{Verification motive}:  (1--7). Robust standard errors in parentheses. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
+\end{minipage}
+\end{table}

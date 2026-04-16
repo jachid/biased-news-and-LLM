@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Treatment Effects on All Outcomes}
+\label{tab:all}
+\begin{tabular}{l*{4}{c}}
+\toprule
+ & \multicolumn{4}{c}{Change Score (Post $-$ Pre)} \\
+\cmidrule(lr){2-5}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{Trust}&\multicolumn{1}{c}{One-sided}&\multicolumn{1}{c}{Bias}&\multicolumn{1}{c}{Share}\\
+\midrule
+Chatbot             &      -2.236         &       3.700\sym{*}  &       8.894\sym{***}&       0.163         \\
+                    &     (1.758)         &     (2.185)         &     (2.332)         &     (1.499)         \\
+\addlinespace
+Comment             &      -1.559         &       1.884         &       3.602         &      -0.036         \\
+                    &     (1.909)         &     (2.287)         &     (2.500)         &     (1.591)         \\
+\midrule
+Observations        &         670         &         670         &         670         &         670         \\
+$R^2$               &       0.187         &       0.317         &       0.201         &       0.164         \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} OLS estimates. Each column reports a separate regression of the change score on treatment indicators and the pre-treatment level of the outcome. The omitted baseline is the Static treatment. Robust standard errors in parentheses. The primary outcome is perceived bias against China (column 3). Columns 1, 2, and 4 report secondary outcomes. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
+\end{minipage}
+\end{table}

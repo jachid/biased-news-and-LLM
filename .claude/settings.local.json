@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Administrator/.claude//**)",
+      "Read(//c/Users/Administrator/.claude/agents//**)",
+      "mcp__stata-mcp__stata_run_selection",
+      "Bash(pdflatex -interaction=nonstopmode primary_analysis_report.tex)",
+      "mcp__stata-mcp__stata_run_file"
+    ]
+  }
+}

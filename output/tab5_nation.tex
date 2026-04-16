@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+\centering
+\caption{Treatment Effects by Country}
+\label{tab:nation}
+\begin{tabular}{lc}
+\toprule
+                    &\multicolumn{1}{c}{(1)}\\
+                    &\multicolumn{1}{c}{Change in Perceived Bias}\\
+\midrule
+Chatbot             &       8.721\sym{***}\\
+                    &     (3.343)         \\
+\addlinespace
+Comment             &       1.466         \\
+                    &     (3.603)         \\
+\addlinespace
+UK                  &      -2.251         \\
+                    &     (3.890)         \\
+\addlinespace
+Chatbot $\times$ UK &       0.160         \\
+                    &     (4.699)         \\
+\addlinespace
+Comment $\times$ UK &       4.128         \\
+                    &     (5.016)         \\
+\midrule
+Observations        &         670         \\
+$R^2$               &       0.202         \\
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} OLS estimates. Dependent variable: change in perceived bias against China (0--100). Controls for pre-treatment bias. Baseline: Static treatment in the US. Robust standard errors in parentheses. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
+\end{minipage}
+\end{table}
