@@ -1,33 +1,41 @@
 \begin{table}[htbp]
 \centering
-\caption{Treatment Effects by Country}
+\caption{Treatment Effects on Perceived Bias by Country}
 \label{tab:nation}
 \begin{tabular}{lc}
 \toprule
-                    &\multicolumn{1}{c}{(1)}\\
-                    &\multicolumn{1}{c}{Change in Perceived Bias}\\
+ & Change in Perceived Bias \\
 \midrule
-Chatbot             &       8.721\sym{***}\\
-                    &     (3.343)         \\
+Chatbot             &       8.744\sym{***}\\
+                    &     (3.350)         \\
 \addlinespace
-Comment             &       1.466         \\
+Comment             &       1.469         \\
                     &     (3.603)         \\
 \addlinespace
-UK                  &      -2.251         \\
-                    &     (3.890)         \\
+UK                  &      -2.241         \\
+                    &     (3.888)         \\
 \addlinespace
-Chatbot $\times$ UK &       0.160         \\
-                    &     (4.699)         \\
+Canada              &      -0.531         \\
+                    &     (3.818)         \\
 \addlinespace
-Comment $\times$ UK &       4.128         \\
-                    &     (5.016)         \\
+Chatbot $\times$ UK &       0.122         \\
+                    &     (4.692)         \\
+\addlinespace
+Comment $\times$ UK &       4.131         \\
+                    &     (5.017)         \\
+\addlinespace
+Chatbot $\times$ Canada&      -0.954         \\
+                    &     (4.730)         \\
+\addlinespace
+Comment $\times$ Canada&       6.982         \\
+                    &     (4.885)         \\
 \midrule
-Observations        &         670         \\
-$R^2$               &       0.202         \\
+Observations        &        1017         \\
+$R^2$               &       0.204         \\
 \bottomrule
 \end{tabular}
 \par\vspace{4pt}
 \begin{minipage}{\textwidth}
-\footnotesize \textit{Notes:} OLS estimates. Dependent variable: change in perceived bias against China (0--100). Controls for pre-treatment bias. Baseline: Static treatment in the US. Robust standard errors in parentheses. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
+\footnotesize \textit{Notes:} OLS estimates. Dependent variable: change in perceived bias against China (0--100). Controls for pre-treatment bias. Baseline: Static in the US. Robust standard errors in parentheses. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
 \end{minipage}
 \end{table}

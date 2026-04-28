@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.21)  16 APR 2026 01:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.21)  28 APR 2026 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -233,6 +233,7 @@ File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4066.
 Package hyperref Info: Hyper figures OFF on input line 4195.
 Package hyperref Info: Link nesting OFF on input line 4200.
 Package hyperref Info: Hyper index ON on input line 4203.
@@ -262,7 +263,7 @@ Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
 Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring ON on input line 6096.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
 \Hy@abspage=\count310
@@ -334,14 +335,9 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count315
 )
-(D:\miktex\tex/latex/threeparttable\threeparttable.sty
-Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box57
-)
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 22
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21
 .
-
-(D:\miktex\tex/latex/lm\t1lmr.fd
+ (D:\miktex\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (D:\miktex\tex/latex/l3backend\l3backend-pdftex.def
@@ -351,24 +347,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 (primary_analysis_report.aux)
 \openout1 = `primary_analysis_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -408,7 +404,7 @@ LaTeX Font Info:    ... okay on input line 22.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count317
 \scratchdimen=\dimen185
-\scratchbox=\box58
+\scratchbox=\box57
 \nofMPsegments=\count318
 \nofMParguments=\count319
 \everyMPshowfont=\toks26
@@ -425,53 +421,62 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (D:\miktex\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 22.
+(D:\miktex\tex/latex/graphics\color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+
+(D:\miktex\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(D:\miktex\tex/latex/graphics\mathcolor.ltx))
+Package hyperref Info: Link coloring ON on input line 21.
  (primary_analysis_report.out)
 (primary_analysis_report.out)
 \@outlinefile=\write3
 \openout3 = `primary_analysis_report.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-4.
+3.
  (D:\miktex\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-4.
+3.
 
 (D:\miktex\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-24.
+23.
  (D:\miktex\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-24.
+23.
 
 (D:\miktex\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 24.
+(Font)              <14.4> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 24.
+(Font)              <10> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 24.
+(Font)              <7> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 26.
+(Font)              <10.95> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 26.
+(Font)              <8> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 26.
+(Font)              <6> on input line 25.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-8.
+7.
  (D:\miktex\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 38.
+(Font)              <12> on input line 37.
  [1
 
 {C:/Users/Administrator/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/mi
@@ -483,46 +488,33 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 47.
 )
 [3]
-<output/fig1_panel.pdf, id=102, 397.485pt x 289.08pt>
+<output/fig1_panel.pdf, id=92, 397.485pt x 289.08pt>
 File: output/fig1_panel.pdf Graphic file (type pdf)
 <use output/fig1_panel.pdf>
 Package pdftex.def Info: output/fig1_panel.pdf  used on input line 98.
 (pdftex.def)             Requested size: 469.75502pt x 341.64957pt.
  (output/tab2_bias.tex) [4 <./output/fig1_panel.pdf>] [5]
 (output/tab2_all.tex)
-<output/fig2_coefplot.pdf, id=120, 397.485pt x 289.08pt>
+<output/fig2_coefplot.pdf, id=111, 397.485pt x 289.08pt>
 File: output/fig2_coefplot.pdf Graphic file (type pdf)
 <use output/fig2_coefplot.pdf>
 Package pdftex.def Info: output/fig2_coefplot.pdf  used on input line 117.
 (pdftex.def)             Requested size: 399.29463pt x 290.40698pt.
  [6] [7 <./output/fig2_coefplot.pdf>]
-Overfull \hbox (8.56526pt too wide) in paragraph at lines 174--175
-[]\T1/lmr/m/n/12 The pri-mary re-sult on per-ceived bias sur-vives both cor-rec
--tions com-fort-ably: the Bonferroni-
- []
-
-<output/fig3_boxplots.pdf, id=138, 397.485pt x 289.08pt>
+<output/fig3_boxplots.pdf, id=129, 397.485pt x 289.08pt>
 File: output/fig3_boxplots.pdf Graphic file (type pdf)
 <use output/fig3_boxplots.pdf>
-Package pdftex.def Info: output/fig3_boxplots.pdf  used on input line 180.
+Package pdftex.def Info: output/fig3_boxplots.pdf  used on input line 193.
 (pdftex.def)             Requested size: 469.75502pt x 341.64957pt.
-[8] (output/tab5_nation.tex) [9 <./output/fig3_boxplots.pdf>]
-Overfull \hbox (8.03568pt too wide) in paragraph at lines 199--199
-[]\T1/lmr/bx/n/14.4 Do In-for-ma-tion Pro-cess-ing Chan-nels Dif-fer Across Tre
-at-ments? 
- []
-
-(output/tab_within_bias.tex) [10] (output/tab_within_all.tex
-
-LaTeX Warning: Float too large for page by 85.0285pt on input line 80.
-
-)
-<output/fig5_mechanisms.pdf, id=161, 397.485pt x 289.08pt>
+ [8]
+(output/tab5_nation.tex) [9 <./output/fig3_boxplots.pdf>] [10]
+(output/tab_within_bias.tex)
+<output/fig5_mechanisms.pdf, id=150, 397.485pt x 289.08pt>
 File: output/fig5_mechanisms.pdf Graphic file (type pdf)
 <use output/fig5_mechanisms.pdf>
-Package pdftex.def Info: output/fig5_mechanisms.pdf  used on input line 217.
+Package pdftex.def Info: output/fig5_mechanisms.pdf  used on input line 220.
 (pdftex.def)             Requested size: 469.75502pt x 341.64957pt.
- [11] [12] [13 <./output/fig5_mechanisms.pdf>] [14]
+ [11] [12 <./output/fig5_mechanisms.pdf>] [13]
 (primary_analysis_report.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -530,27 +522,27 @@ L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `primary_analysis_report.out' has not changed
 .
-(rerunfilecheck)             Checksum: 63FC955578FC83D4601DECC9A6391359;2771.
+(rerunfilecheck)             Checksum: CF1A5AC2A62729C748A26A7C1B0087D6;2274.
  ) 
 Here is how much of TeX's memory you used:
- 10734 strings out of 467871
- 161789 string characters out of 5435187
- 592636 words of memory out of 5000000
- 39393 multiletter control sequences out of 15000+600000
+ 10725 strings out of 467871
+ 161519 string characters out of 5435187
+ 590907 words of memory out of 5000000
+ 39388 multiletter control sequences out of 15000+600000
  700968 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,995b,520s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1173b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/miktex/fonts/type1/public/lm/lmbx10.pfb><D:/miktex/fonts/type1/public/lm/
 lmbx12.pfb><D:/miktex/fonts/type1/public/lm/lmmi10.pfb><D:/miktex/fonts/type1/p
 ublic/lm/lmmi12.pfb><D:/miktex/fonts/type1/public/lm/lmr10.pfb><D:/miktex/fonts
 /type1/public/lm/lmr12.pfb><D:/miktex/fonts/type1/public/lm/lmr17.pfb><D:/mikte
-x/fonts/type1/public/lm/lmr7.pfb><D:/miktex/fonts/type1/public/lm/lmr8.pfb><D:/
-miktex/fonts/type1/public/lm/lmri10.pfb><D:/miktex/fonts/type1/public/lm/lmri12
-.pfb><D:/miktex/fonts/type1/public/lm/lmsy10.pfb><D:/miktex/fonts/type1/public/
-lm/lmsy7.pfb><D:/miktex/fonts/type1/public/lm/lmsy8.pfb>
-Output written on primary_analysis_report.pdf (14 pages, 340629 bytes).
+x/fonts/type1/public/lm/lmr8.pfb><D:/miktex/fonts/type1/public/lm/lmri10.pfb><D
+:/miktex/fonts/type1/public/lm/lmri12.pfb><D:/miktex/fonts/type1/public/lm/lmsy
+10.pfb><D:/miktex/fonts/type1/public/lm/lmsy7.pfb><D:/miktex/fonts/type1/public
+/lm/lmsy8.pfb>
+Output written on primary_analysis_report.pdf (13 pages, 325499 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,48 +5,51 @@
 \begin{tabular}{l*{3}{c}}
 \toprule
  & \multicolumn{3}{c}{Change in Perceived Bias (0--100)} \\
-                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
-                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+\cmidrule(lr){2-4}
+ & (1) & (2) & (3) \\
 \midrule
-Chatbot             &       9.366\sym{***}&       8.894\sym{***}&       8.605\sym{***}\\
-                    &     (2.575)         &     (2.332)         &     (2.321)         \\
+Chatbot             &       8.549\sym{***}&       8.515\sym{***}&       8.483\sym{***}\\
+                    &     (2.104)         &     (1.905)         &     (1.919)         \\
 \addlinespace
-Comment             &       4.051         &       3.602         &       3.259         \\
-                    &     (2.790)         &     (2.500)         &     (2.512)         \\
+Comment             &       5.470\sym{**} &       5.290\sym{***}&       5.000\sym{**} \\
+                    &     (2.226)         &     (1.996)         &     (2.007)         \\
 \addlinespace
-Pre-treatment bias  &                     &      -0.428\sym{***}&      -0.431\sym{***}\\
-                    &                     &     (0.040)         &     (0.041)         \\
+Pre-treatment bias  &                     &      -0.423\sym{***}&      -0.427\sym{***}\\
+                    &                     &     (0.031)         &     (0.032)         \\
 \addlinespace
-Age                 &                     &                     &      -0.082         \\
-                    &                     &                     &     (0.057)         \\
+Age                 &                     &                     &      -0.104\sym{**} \\
+                    &                     &                     &     (0.050)         \\
 \addlinespace
-Female              &                     &                     &       2.662         \\
-                    &                     &                     &     (1.818)         \\
+Female              &                     &                     &       1.744         \\
+                    &                     &                     &     (1.510)         \\
 \addlinespace
-Education           &                     &                     &       0.824         \\
-                    &                     &                     &     (0.899)         \\
+Education           &                     &                     &       0.354         \\
+                    &                     &                     &     (0.710)         \\
 \addlinespace
-Income              &                     &                     &      -0.346         \\
-                    &                     &                     &     (0.571)         \\
+Income              &                     &                     &      -0.006         \\
+                    &                     &                     &     (0.475)         \\
 \addlinespace
-Pol.\ orientation   &                     &                     &      -0.898         \\
-                    &                     &                     &     (0.641)         \\
+Pol.\ orientation   &                     &                     &      -0.527         \\
+                    &                     &                     &     (0.539)         \\
 \addlinespace
-Trust in AI         &                     &                     &       0.179         \\
-                    &                     &                     &     (0.663)         \\
+Trust in AI         &                     &                     &       0.453         \\
+                    &                     &                     &     (0.565)         \\
 \addlinespace
-Favorable to China  &                     &                     &       0.597         \\
-                    &                     &                     &     (1.079)         \\
+Favorable to China  &                     &                     &       0.068         \\
+                    &                     &                     &     (0.901)         \\
 \addlinespace
-UK                  &                     &                     &      -0.978         \\
-                    &                     &                     &     (1.833)         \\
+UK                  &                     &                     &      -0.724         \\
+                    &                     &                     &     (1.827)         \\
+\addlinespace
+Canada              &                     &                     &       0.409         \\
+                    &                     &                     &     (1.875)         \\
 \midrule
-Observations        &         670         &         670         &         670         \\
-$R^2$               &       0.022         &       0.201         &       0.212         \\
+Observations        &        1017         &        1017         &        1017         \\
+$R^2$               &       0.017         &       0.199         &       0.207         \\
 \bottomrule
 \end{tabular}
 \par\vspace{4pt}
 \begin{minipage}{\textwidth}
-\footnotesize \textit{Notes:} OLS estimates. The dependent variable is the change in perceived bias against China (post minus pre) on a 0--100 scale. The omitted baseline is the Static treatment. Robust standard errors in parentheses. Column (1) is unadjusted; column (2) controls for pre-treatment bias; column (3) adds demographic controls and country fixed effect. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
+\footnotesize \textit{Notes:} OLS estimates. Dependent variable: change in perceived bias against China (post $-$ pre, 0--100 scale). Baseline: Static. Robust standard errors in parentheses. Column (1): unadjusted. Column (2): pre-treatment bias control. Column (3): demographic controls and country fixed effects. \sym{*}~$p<0.10$, \sym{**}~$p<0.05$, \sym{***}~$p<0.01$.
 \end{minipage}
 \end{table}

@@ -5,7 +5,8 @@
       "Read(//c/Users/Administrator/.claude/agents//**)",
       "mcp__stata-mcp__stata_run_selection",
       "Bash(pdflatex -interaction=nonstopmode primary_analysis_report.tex)",
-      "mcp__stata-mcp__stata_run_file"
+      "mcp__stata-mcp__stata_run_file",
+      "Bash(grep -rn \"endcsname\\\\|\\\\label.*\\\\_\" /c/Users/Administrator/Desktop/bias_news_llm/output/*.tex)"
     ]
   }
 }
